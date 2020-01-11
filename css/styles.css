@@ -1,0 +1,106 @@
+body {
+    background-color: #222831 !important;
+    color: #eeeeee !important;
+}
+
+.nav-item:hover {
+    background-color: #00adb5 !important;
+    border-radius: 5px;
+}
+
+.bg-meme {
+    background-color: #393e46;
+}
+
+.bg-meme > .h4 {
+    letter-spacing: 1px;
+}
+
+.bg-meme > .h4 > a {
+    color: #eeeeee !important;
+}
+
+.bg-meme > .h4 > a:hover {
+    text-decoration: none;
+}
+
+.meme-content {
+    overflow: hidden;
+}
+
+.meme-info {
+    font-size: 12px;
+}
+
+.like {
+    cursor: pointer;
+}
+
+.no-active .page-link {
+    background-color: #393e46;
+    border-color: #00adb5;
+    color: #00adb5;
+    transition: all 0.2s ease-in-out;
+}
+
+.no-active .page-link:hover {
+    background-color: #393e46;
+    border-color: #00adb5;
+    color: #00adb5;
+    border-style: dashed;
+    transform: scale(1.1);
+}
+
+.active > .page-link {
+    background-color: #00adb5 !important;
+    color: #eeeeee !important;
+    cursor: default;
+}
+
+.disabled > .page-link {
+    background-color: #393e46 !important;
+    border-color: #00adb5 !important;
+    color: #00adb5 !important;
+}
+
+.pagination-mobile {
+    display: none;
+}
+
+.comment-nickname {
+    font-size: 12px;
+    color: darkgray;
+}
+
+.comment-content {
+    border-bottom: 1px dashed #222831;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+@media(max-width:576px) {
+    .meme {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    .pagination {
+        display: none;
+    }
+    
+    .pagination-mobile {
+        display: block;
+        text-align: center;
+        margin: 15px 2px;
+        padding: 14px;
+        background-color: #00adb5;
+        color: #eeeeee;
+        letter-spacing: 1px;
+        font-size: 18px;
+    }
+    
+    .pagination-mobile:hover {
+        color: #eeeeee;
+        text-decoration: none;
+    }
+}
